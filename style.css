@@ -1,0 +1,221 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.nav-logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.nav-logo:hover{
+    color: white;
+}
+.container-flow i{
+    font-size: 2 rem;
+}
+
+.nav-buttons a{
+    font-weight: 400;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.nav-buttons:hover > a{
+    color: #0a043c;
+}
+
+header{
+    border-bottom: 3px solid white;
+    background-color: black;
+}
+
+
+.biggest-heading > h1{
+    font-size: 11rem;
+    color:white;
+    margin-left: 5rem;
+    font-weight: bolder;
+    animation: fadeIn 3S;
+
+}
+#biggest-heading-with-image{
+    background-color:black;
+    padding: 10rem 0 5rem 0;
+}
+
+.biggest-heading{
+    min-width:0;
+    flex-shrink: 0;
+}
+
+.Biggest-heading-image{
+    width:40vw;
+    flex-shrink: 0;
+}
+
+.biggest-heading-with-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.biggest-heading-image >img{
+    border-radius: 250px;
+    border: 0px solid black;
+    margin-top: 35%;
+    height:500px;
+    width:500px;
+    
+    vertical-align: middle;
+
+}
+
+.down-arrow{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.down-arrow > a{color: white;}
+#AboutUs{
+    margin: 12rem 6rem;
+}
+
+.AboutUs-Container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.AboutUsImage{
+    padding-left: 2rem;
+}
+
+#AboutUsImage{
+    width: 550px;
+    height: 450px;
+}
+
+#AboutUsHeading{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+#AboutUsCont{
+    font-size: 1.22rem;
+    font-weight: 400;
+}
+
+#AboutUsHeading, #AboutUsCont{
+    margin-left: 7rem;
+}
+
+#OurServices{
+    margin: 12rem 6rem 15rem 6rem;
+}
+
+#OurServicesHeading{
+    font-size: 2.65rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.card-heading{
+    font-size: 2.65rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    margin-left: 2rem;
+}
+
+#card-cont{
+    font-weight: 400;
+    font-size: 1.20rem;
+    margin-left: 2rem;
+}
+
+.OurServices-Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width:92vw;
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding-top: 2rem;
+    overflow-x:auto;
+
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 0;
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    margin-right: 3.5rem;
+    padding: 1rem;
+    background-color: white;
+    flex-grow:0;
+    flex-shrink: 0;
+    transition-duration: 0.3s;
+}
+
+.card:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.ContactUs{
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 3rem 6rem;
+}
+
+#contactusheading{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.inputFields{
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+::placeholder{
+    color:white;
+}
+
+.submitBtn{
+    font-size: 1.4rem;
+    padding: 0.75rem 5rem;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #biggest-heading-with-imageMediaQuery{flex-direction:column;}
+}
+
+@media only screen and (max-width: 800px){
+    #AboutUsMediaQueries{flex-direction: column;}
+}
